@@ -1,4 +1,6 @@
-import '../css/Navbar.css';
+import { Link } from 'react-router';
+import '../css/navbar.css';
+
 
 import pokemonLogo from '../img/Pokemon_logo.png';
 import pokemonGoIcon from '../img/Pokémon_GO_logo.svg.png';
@@ -12,15 +14,15 @@ function Navbar() {
       </div>
 
       <div className="navbar-right">
-        <a href="#" className="nav-link">
+        <Link to="/" className="nav-link">
           <img src={pokedexIcon} alt="Pokedex icon" className="nav-icon" />
           <span>Pokedex</span>
-        </a>
+        </Link>
 
-        <a href="#" className="nav-link">
+        <Link to="/pokemon-go" className="nav-link">
           <img src={pokemonGoIcon} alt="Pokemon Go icon" className="nav-icon" />
           <span>Pokemon GO</span>
-        </a>
+        </Link>
       </div>
     </nav>
   );

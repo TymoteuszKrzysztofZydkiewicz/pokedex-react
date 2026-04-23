@@ -1,11 +1,14 @@
-import Navbar from './components/navbar';
-import Footer from './components/Footer';
-
+import { Outlet } from 'react-router';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
     <div>
       <Navbar />
+      <main>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
